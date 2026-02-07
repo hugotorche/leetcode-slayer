@@ -1,4 +1,3 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        nums_range = set(range(0, len(nums)+1))
-        return nums_range.difference(nums).pop()
+        return set(range(0, len(nums)+1)).difference(nums).pop()
